@@ -2,9 +2,9 @@ name: Code checks
 
 on:
   push:
-    branches: [ master, test-pr-wb-1 ]
+    branches: [ master ]
   pull_request:
-    branches: [ master, test-pr-wb-1 ]
+    branches: [ master ]
 jobs:
   build:
     runs-on:  ubuntu-latest
