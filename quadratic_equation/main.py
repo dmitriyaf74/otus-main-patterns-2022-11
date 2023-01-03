@@ -5,13 +5,13 @@ eps = 1e-14
 
 def solve(a: float, b: float, c: float) -> list:
     if any(map(isinf, [a, b, c])):
-        raise ValueError("Coefficients must be differ from a infinity.")
+        raise ValueError("Коэффициенты должны отличаться от бесконечности.")
 
     if any(map(isnan, [a, b, c])):
-        raise ValueError("Coefficients must be differ from a nan.")
+        raise ValueError("Коэффициенты должны отличаться от nan.")
 
     if -eps < a < eps:
-        raise ValueError("Coefficient 'a' must be differ from a zero.")
+        raise ValueError("Коэффициент 'а' должен отличаться от нуля.")
 
     d: float = b * b - 4 * a * c
 
