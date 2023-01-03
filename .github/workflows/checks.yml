@@ -26,6 +26,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install numpy --upgrade
+        pip install scipy --upgrade 
         pip install flake8 pytest python-git
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
