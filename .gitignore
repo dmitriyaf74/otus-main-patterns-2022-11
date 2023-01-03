@@ -1,0 +1,10 @@
+
+space_invaders/.idea/inspectionProfiles/profiles_settings.xml
+space_invaders/.idea/misc.xml
+space_invaders/.idea/modules.xml
+space_invaders/.idea/space_invaders.iml
+space_invaders/.idea/workspace.xml
+space_invaders/engine/__pycache__/exceptions.cpython-311.pyc
+space_invaders/engine/commands/__pycache__/change_angular_velocity.cpython-311.pyc
+space_invaders/engine/commands/__pycache__/change_straight_line_position.cpython-311.pyc
+*.pyc
