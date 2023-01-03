@@ -3,6 +3,7 @@ from math import sqrt, isinf, isnan
 eps = 1e-14
 
 
+
 def solve(a: float, b: float, c: float) -> list:
     if any(map(isinf, [a, b, c])):
         raise ValueError("Коэффициенты должны отличаться от бесконечности.")
