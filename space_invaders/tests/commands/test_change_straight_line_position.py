@@ -3,7 +3,6 @@ from space_invaders.engine import exceptions
 from space_invaders.engine.interfaces import StraightLinePositionController
 from space_invaders.engine.commands.change_straight_line_position import ChangeStraightLinePosition
 
-
 class MockStraightLinePositionController(StraightLinePositionController):
     def __init__(self, current_position: [int,int], position_correction: [int,int]):
         self._current_position = current_position
