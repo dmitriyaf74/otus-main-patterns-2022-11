@@ -40,4 +40,4 @@ jobs:
       run: |
         cd '/home/runner/work/'
         git init
-        #pytest
+        pytest
