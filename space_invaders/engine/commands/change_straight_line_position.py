@@ -11,11 +11,9 @@ class ChangeStraightLinePosition(Command):
         self._obj = obj
 
     def execute(self) -> None:
-        if not self._obj.moveable:
-            raise exceptions.EObjectNotMoveableError
         if None in [self._obj.current_position, self._obj.position_correction]:
-            raise exceptions.ENoneStraightLinePositionError
+            raise exceptions.NoneStraightLinePositionError
         if None in self._obj.current_position + self._obj.position_correction:
-            raise exceptions.ENoneStraightLinePositionError
+            raise exceptions.NoneStraightLinePositionError
         self._obj.current_position = \
             tuple(map(operator.add, self._obj.current_position, self._obj.position_correction))
